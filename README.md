@@ -7,24 +7,15 @@ React画面から疑似データを入力し、異常検知・アラート登録
 
 
 React (S3 + CloudFront)
-　　↓
 API Gateway HTTP API
-　　↓
 Lambda（CRUD処理）
-　　↓
 DynamoDB
-
 EventBridge Scheduler
-　　↓
 Lambda（定期点検）
-　　↓（異常検知時）
+Lambda（異常検知時）
 SQS
-　　↓
 Lambda（アラート登録）
-　　↓
 CloudWatch Logs
-
-
 
 ## 機能一覧
 - 空調機一覧表示
